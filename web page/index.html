@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>THE NISSAN GT-R</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .car-model {
+            margin: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s;
+        }
+
+        .car-model img {
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            /* Add 3D rotation animation */
+            transition: transform 0.5s;
+        }
+
+        .car-model img:hover {
+            transform: rotateY(360deg);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .car-model {
+                width: 100%;
+            }
+        }
+
+        /* Video background styles */
+        #video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        #video-background {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Optional styling for content */
+        #content {
+            position: relative;
+            z-index: 1;
+            padding: 40px;
+            color: #fff;
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h4>Welcome to our website</h4>
+        <h1>THE NISSAN GT-R</h1>
+    </header>
+    <nav>
+        <a href="https://www.nissanusa.com/vehicles/sports-cars/gt-r.html">Home</a>
+        <a href="https://www.nissanusa.com/vehicles/sports-cars/gt-r/gallery.html">Cars</a>
+        <a href="The GT-R is renowned for its impressive performance capabilities. It is powered by a twin-turbocharged V6 engine, delivering substantial horsepower and torque, which allows it to accelerate from 0 to 60 mph in under three seconds. The car's all-wheel-drive system, sophisticated suspension, and advanced aerodynamics contribute to its exceptional handling and stability">About</a>
+        <a href="adityawadhwani96@gmail.com">Contact</a>
+    </nav>
+    <div id="video-container">
+        <video id="video-background" autoplay muted loop>
+            <source src="GT.mp4" type="video/mp4">
+            <!-- Add more video sources for different formats if needed -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Optional content overlay -->
+    <div id="content">
+        <h1></h1>
+
+    </div>
+</body>
+</html>
